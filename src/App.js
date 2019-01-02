@@ -1,25 +1,23 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import Home from "./components/Home/Home";
+import About from "./components/About/About";
+import Contact from "./components/Contact/Contact";
+import scrollToComponent from "react-scroll-to-component";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h1>Welcome to my portfolio</h1>
+        <div>
+          <button onClick={() => scrollToComponent(this.refs.home)}>Home</button>
+          <button onClick={() => scrollToComponent(this.refs.about, { offset: 0, align: "top", duration: 1000 })}>About</button>
+          <button onClick={() => scrollToComponent(this.refs.contact, { offset: 50, align: "top", duration: 1000 })}>Contact</button>
+        </div>
+        <Home ref="home" />
+        <About ref="about" />
+        <Contact ref="contact" />
       </div>
     );
   }
