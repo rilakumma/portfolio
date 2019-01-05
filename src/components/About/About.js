@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./About.css";
 import reacticon from "./../../logo.svg";
-import js from "./../../js.jpg";
+import js from "./../../javascript.png";
 import css3 from "./../../css3.png";
 import html from "./../../html.png";
 import node from "./../../node.png";
@@ -30,10 +30,10 @@ export default class About extends Component {
             <img src={js} width="130" alt="" />
             <img src={css3} width="150" alt="" />
             <img src={html} width="120" alt="" />
-            <img src={node} width="150" alt="" />
-            <img src={postgr} width="150" alt="" />
-            <img src={reduxpng} width="150" alt="" />
-            <img src={sassy} width="150" alt="" />
+            <img src={node} width="120" alt="" />
+            <img src={postgr} width="120" alt="" />
+            <img src={reduxpng} width="120" alt="" />
+            <img src={sassy} width="120" alt="" />
           </div>
         </div>
       </div>

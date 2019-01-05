@@ -2,11 +2,13 @@
   font-size: 50px;
 }
 .about {
+  height: 500px;
   background: rgb(242, 219, 225);
 }
 .about-me {
   padding-left: 50px;
 }
 .skills {
+  height: 500px;
   padding-left: 50px;
 }

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import scrollToComponent from "react-scroll-to-component";
 import email from "./email.svg";
@@ -13,11 +14,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="header-bar">
-          <span>Madi Walmsley</span>
+          {/* <span>Madi Walmsley</span> */}
           <ul className="header-ul">
             <li onClick={() => scrollToComponent(this.refs.home)}>Home</li>
             <li onClick={() => scrollToComponent(this.refs.about, { offset: 0, align: "top", duration: 1000 })}>About</li>
-            <li onClick={() => scrollToComponent(this.refs.contact, { offset: 50, align: "top", duration: 1000 })}>Contact</li>
+            <li onClick={() => scrollToComponent(this.refs.projects, { offset: 0, align: "top", duration: 1000 })}>Projects</li>
+            <li onClick={() => scrollToComponent(this.refs.contact, { offset: 0, align: "top", duration: 1000 })}>Contact</li>
           </ul>
         </header>
         <div className="side-links">
@@ -41,7 +43,9 @@ class App extends Component {
         </div>
         <Home ref="home" />
         <About ref="about" />
+        <Projects ref="projects" />
         <Contact ref="contact" />
+        <footer>Madi Walmsley, 2019</footer>
       </div>
     );
   }

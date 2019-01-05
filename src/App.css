@@ -3,18 +3,21 @@
   position: relative;
 }
 .header-bar {
-  height: 75px;
+  height: 100%;
   width: 100%;
-  background: rgb(240, 240, 248);
+
+  position: fixed;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 .header-ul {
-  width: 200px;
+  padding-top: 20px;
+  height: 150px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   margin: 0px 10px;
 }
 

@@ -1,8 +1,8 @@
 .contact {
   width: 100%;
-  height: 500px;
+  height: 930px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   background: #e2eef6;
