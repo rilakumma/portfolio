@@ -1,0 +1,14 @@
+.home {
+  padding-left: 50px;
+  font-size: 100px;
+}
+/* .hello {
+  font-size: 100px;
+}
+.intro {
+  font-size: 100px;
+} */
+.my-name {
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+}

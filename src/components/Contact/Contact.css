@@ -1,13 +1,61 @@
 .contact {
+  width: 100%;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 100px;
+  background: #e2eef6;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
 .contact-form {
+  height: 300px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px grey solid;
+}
+.contact-title {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+.holder {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left {
+  font-size: 20px;
+  color: grey;
+}
+.input-line {
+  width: 90%;
+  border: none;
+  border-bottom: 1px grey solid;
+  background: none;
+  line-height: 20px;
+  font-size: 15px;
+  outline: none;
+}
+.input-message {
+  outline: none;
+  resize: none;
+  height: 200px;
+  width: 90%;
+  background: none;
+  border: none;
+  line-height: 20px;
+  font-size: 15px;
+}
+.input-line:focus {
+  background: rgba(192, 192, 192, 0.3);
+}
+.input-message:focus {
+  background: rgba(192, 192, 192, 0.3);
 }
