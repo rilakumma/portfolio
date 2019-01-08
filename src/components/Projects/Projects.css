@@ -1,4 +1,29 @@
 .projects-container {
   height: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.proj-one {
+  height: 280px;
+  width: 430px;
+  font-size: 50px;
   background: rgb(240, 240, 248);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 20px;
+}
+.proj-one:hover {
+  background: rgba(168, 168, 168, 0.3);
+}
+.proj-two {
+  height: 280px;
+  width: 430px;
+  font-size: 50px;
+  background: rgb(240, 240, 248);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 20px;
 }

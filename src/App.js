@@ -45,7 +45,7 @@ class App extends Component {
         <About ref="about" />
         <Projects ref="projects" />
         <Contact ref="contact" />
-        <footer>Madi Walmsley, 2019</footer>
+        {/* <footer>Madi Walmsley, 2019</footer> */}
       </div>
     );
   }

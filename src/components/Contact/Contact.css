@@ -11,17 +11,24 @@ a {
   text-decoration: none;
   color: black;
 }
+.socials {
+  width: 75px;
+  z-index: 1;
+}
+
 .contact-form {
-  height: 300px;
-  width: 400px;
+  z-index: 1;
+  height: 450px;
+  width: 550px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
   border: 1px grey solid;
 }
 .contact-title {
-  margin-bottom: 30px;
+  margin-top: 75px;
+  margin-bottom: 75px;
   font-size: 30px;
 }
 .holder {
@@ -34,13 +41,18 @@ a {
   font-size: 20px;
   color: grey;
 }
+.form-title {
+  margin-top: 25px;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
 .input-line {
   width: 90%;
   border: none;
   border-bottom: 1px grey solid;
   background: none;
-  line-height: 20px;
-  font-size: 15px;
+  line-height: 25px;
+  font-size: 20px;
   outline: none;
 }
 .input-message {
@@ -50,12 +62,21 @@ a {
   width: 90%;
   background: none;
   border: none;
-  line-height: 20px;
-  font-size: 15px;
+  line-height: 25px;
+  font-size: 20px;
 }
 .input-line:focus {
   background: rgba(192, 192, 192, 0.3);
 }
 .input-message:focus {
   background: rgba(192, 192, 192, 0.3);
+}
+.submit {
+  width: 140px;
+  background: none;
+  border: 1px solid black;
+  height: 50px;
+  font-size: 24px;
+  box-shadow: 1px 1px grey;
+  outline: none;
 }
