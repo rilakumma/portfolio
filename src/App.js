@@ -8,13 +8,14 @@ import scrollToComponent from "react-scroll-to-component";
 import email from "./email.svg";
 import github from "./github.svg";
 import linkedin from "./linkedin.png";
+import routes from "./routes.js";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+        {routes}
         <header className="header-bar">
-          {/* <span>Madi Walmsley</span> */}
           <ul className="header-ul">
             <li onClick={() => scrollToComponent(this.refs.home)}>Home</li>
             <li onClick={() => scrollToComponent(this.refs.about, { offset: 0, align: "top", duration: 1000 })}>About</li>
@@ -41,11 +42,11 @@ class App extends Component {
             </li>
           </ul>
         </div>
+
         <Home ref="home" />
         <About ref="about" />
         <Projects ref="projects" />
         <Contact ref="contact" />
-        {/* <footer>Madi Walmsley, 2019</footer> */}
       </div>
     );
   }
