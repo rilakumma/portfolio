@@ -5,17 +5,30 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  background: #e2eef6;
 }
 a {
   text-decoration: none;
   color: black;
 }
+.social-box {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 50px;
+}
 .socials {
   width: 75px;
   z-index: 1;
 }
-
+.form {
+  width: 100%;
+  height: 100vh;
+  background: #e2eef6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contact-form {
   z-index: 1;
   height: 450px;
@@ -28,7 +41,7 @@ a {
 }
 .contact-title {
   margin-top: 75px;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
   font-size: 30px;
 }
 .holder {
@@ -72,6 +85,7 @@ a {
   background: rgba(192, 192, 192, 0.3);
 }
 .submit {
+  margin-top: 20px;
   width: 140px;
   background: none;
   border: 1px solid black;

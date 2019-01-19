@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import "./App.scss";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
@@ -8,13 +8,13 @@ import scrollToComponent from "react-scroll-to-component";
 import email from "./email.svg";
 import github from "./github.svg";
 import linkedin from "./linkedin.png";
-import routes from "./routes.js";
+import down from "./DownArrow.png";
+import Jump from "react-reveal/Jump";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        {routes}
         <header className="header-bar">
           <ul className="header-ul">
             <li onClick={() => scrollToComponent(this.refs.home)}>Home</li>
@@ -44,6 +44,21 @@ class App extends Component {
         </div>
 
         <Home ref="home" />
+        <div className="scroll-down">
+          <Jump delay={2000}>
+            <img
+              src={down}
+              alt="scroll down"
+              onClick={() =>
+                scrollToComponent(this.refs.about, {
+                  offset: 0,
+                  align: "top",
+                  duration: 1500
+                })
+              }
+            />
+          </Jump>
+        </div>
         <About ref="about" />
         <Projects ref="projects" />
         <Contact ref="contact" />

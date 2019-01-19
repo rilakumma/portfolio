@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "./About.css";
+import Bounce from "react-reveal/Bounce";
+import Fade from "react-reveal/Fade";
 import reacticon from "./../../darkreact.png";
 import js from "./../../javascript.png";
 import css3 from "./../../drkcss.png";
@@ -8,33 +10,79 @@ import node from "./../../nodejsblk.png";
 import postgr from "./../../darkpostgr.png";
 import reduxpng from "./../../drkredux.png";
 import sassy from "./../../blksass.png";
+import me from "./professional-madi.png";
 
 export default class About extends Component {
   render() {
-    console.log(window.scrollTo(200, 200));
     return (
       <div className="about-container">
         <div className="about">
           <div className="about-me">
-            <h1>About Me</h1>
-            <div>
-              {/* I'm a full-stack Web Developer based in Phoenix, AZ, who has a passion for design and learning. I specialize in React,
-              Javascript, Node, HTML, CSS, Redux, and PostgreSQL. I love to create and design useful applications that provide the best user
-              experience. I am currently seeking full-time work where I can put my skills to good use. */}
+            <div className="bio">
+              <h1 className="about-title">about me</h1>
+              {/* <Fade left duration={2500}> */}
+              <p className="bio-text">
+                I'm a<span>&hearts;</span>
+              </p>
+              {/* </Fade>
+              <Fade top duration={2000}> */}
+              <img src={me} alt="madi walmsley" className="madi" />
+              {/* </Fade> */}
             </div>
           </div>
         </div>
         <div className="skills">
-          <h2>My Skills</h2>
-          <div className="skills-box" ref="hi">
-            <img src={reacticon} width="135" alt="" className="logo" />
-            <img src={js} width="130" alt="" />
-            <img src={css3} width="110" alt="" />
-            <img src={html} width="120" alt="" />
-            <img src={node} width="120" alt="" />
-            <img src={postgr} width="120" alt="" />
-            <img src={reduxpng} width="120" alt="" />
-            <img src={sassy} width="120" alt="" />
+          <h1 className="skilled-in">skills</h1>
+          <div className="skills-box">
+            <Bounce delay={500}>
+              <div className="icon">
+                <img src={js} width="130" alt="" />
+                <p>Javascript</p>
+              </div>
+            </Bounce>
+            <Bounce delay={600}>
+              <div className="icon">
+                <img src={reacticon} width="135" alt="" />
+                <p>ReactJS</p>
+              </div>
+            </Bounce>
+            <Bounce delay={750}>
+              <div className="icon">
+                <img src={reduxpng} width="120" alt="" />
+                <p>Redux</p>
+              </div>
+            </Bounce>
+            <Bounce delay={850}>
+              <div className="icon">
+                <img src={css3} width="110" alt="" />
+                <p>CSS</p>
+              </div>
+            </Bounce>
+            <Bounce delay={950}>
+              <div className="icon">
+                <img src={html} width="120" alt="" />
+                <p>HTML</p>
+              </div>
+            </Bounce>
+            <Bounce delay={1050}>
+              <div className="icon">
+                <img src={sassy} width="120" alt="" />
+                <p>Sass</p>
+              </div>
+            </Bounce>
+            <Bounce delay={1150}>
+              <div className="icon">
+                <img src={node} width="120" alt="" />
+                <p>NodeJS</p>
+              </div>
+            </Bounce>
+
+            <Bounce delay={1250}>
+              <div className="icon">
+                <img src={postgr} width="120" alt="" />
+                <p>PostgreSQL</p>
+              </div>
+            </Bounce>
           </div>
         </div>
       </div>

@@ -1,0 +1,17 @@
+@mixin button {
+  height: 35px;
+  width: 120px;
+  background: none;
+  border: 2px solid black;
+  font-size: 18px;
+  margin-top: 20px;
+  &:hover {
+    cursor: pointer;
+    background: lightgrey;
+  }
+}
+@mixin emptyText {
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  font-size: 70px;
+}

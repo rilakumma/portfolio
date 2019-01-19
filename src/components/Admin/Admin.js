@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import "./Admin.css";
 
 export default class Admin extends Component {
   constructor() {
@@ -9,7 +10,7 @@ export default class Admin extends Component {
     };
   }
   componentDidMount() {
-    axios.get("/api/admin/").then(res => {
+    axios.get("/api/admin").then(res => {
       this.setState({
         messages: res.data
       });
@@ -18,18 +19,15 @@ export default class Admin extends Component {
   render() {
     const showMessages = this.state.messages.map(message => {
       return (
-        <div>
-          <h1>{message.name}</h1>
-          <h2>{message.email}</h2>
-          <p>{message.message}</p>
+        <div key={message.name} className="message-box">
+          <p>date sent: {message.date}</p>
+          <h1 className="new-name">name: {message.name}</h1>
+          <h2 className="new-email">email: {message.email}</h2>
+          <p className="new-message">message: {message.message}</p>
         </div>
       );
     });
-    return (
-      <div>
-        <h1>ADMIN PAGE~~~~~~</h1>
-        <div>{showMessages}</div>
-      </div>
-    );
+    return <div>{/* <h1>ADMIN PAGE~~~~~~</h1>
+        <div>{showMessages}</div> */}</div>;
   }
 }

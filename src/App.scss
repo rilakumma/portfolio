@@ -1,0 +1,59 @@
+@import "./sass/main.scss";
+.App {
+  font-family: "Arimo", sans-serif;
+  /* font-family: "Maitree", serif; */
+  position: relative;
+}
+.scroll-down {
+  margin-top: -50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  img {
+    width: 50px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+}
+.header-bar {
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  left: 1%;
+  top: 65%;
+}
+.header-ul {
+  padding-top: 200px;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px;
+  writing-mode: tb-rl;
+  transform: rotate(-180deg);
+  li {
+    margin: 15px 0px;
+  }
+}
+
+.side-links {
+  z-index: 1;
+  position: fixed;
+  height: 200px;
+  width: 60px;
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.link-icons {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
