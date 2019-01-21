@@ -50,39 +50,37 @@ export default class Contact extends Component {
         </div>
 
         <div className="form">
-          <Jump delay={400}>
-            <form className="contact-form">
-              <h1 className="form-title">Leave a message</h1>
-              <input
-                value={this.state.email}
-                name="email"
-                type="email"
-                onChange={this.handleChange}
-                placeholder="Email"
-                className="input-line"
-                required
-              />
-              <input
-                value={this.state.name}
-                name="name"
-                type="text"
-                onChange={this.handleChange}
-                placeholder="Name"
-                className="input-line"
-                required
-              />
-              <textarea
-                value={this.state.message}
-                name="message"
-                type="text"
-                onChange={this.handleChange}
-                placeholder="Message"
-                className="input-message"
-                required
-              />
-              <input type="submit" value="Send" className="submit" onClick={() => this.submitMessage()} />
-            </form>
-          </Jump>
+          <form className="contact-form">
+            <h1 className="form-title">Leave a message</h1>
+            <input
+              value={this.state.email}
+              name="email"
+              type="email"
+              onChange={this.handleChange}
+              placeholder="Email"
+              className="input-line"
+              required
+            />
+            <input
+              value={this.state.name}
+              name="name"
+              type="text"
+              onChange={this.handleChange}
+              placeholder="Name"
+              className="input-line"
+              required
+            />
+            <textarea
+              value={this.state.message}
+              name="message"
+              type="text"
+              onChange={this.handleChange}
+              placeholder="Message"
+              className="input-message"
+              required
+            />
+            <input type="submit" value="Send" className="submit" onClick={() => this.submitMessage()} />
+          </form>
         </div>
         {/* </div> */}
       </div>

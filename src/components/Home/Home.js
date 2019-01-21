@@ -9,7 +9,7 @@ export default class Home extends Component {
           <h1 className="hello">Hello,</h1>
           <h2 className="intro">My name is Madi Walmsley.</h2>
           <p>
-            I'm a <span className="my-name">full stack web developer</span> in Phoenix, Arizona.
+            I'm a <span className="my-name">full stack web developer</span> based in Phoenix, Arizona.
           </p>
         </div>
       </div>

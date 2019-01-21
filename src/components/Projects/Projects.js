@@ -1,11 +1,40 @@
 import React, { Component } from "react";
 import "./Projects.scss";
-import mucciHome from "./pompom/mucci-home.png";
-import pompom from "./pompom/pompom.png";
 import Fade from "react-reveal/Fade";
+import PicSlider from "./Slider";
+
+
+// mucci pictures
+import mucciHome from "./pompom/mucci-home.png";
+import home from './pompom/homepage.png';
+import homeModal from './pompom/home-modal.png';
+import itemView from './pompom/item-view.png';
+import homeMid from './pompom/home-mid.png';
+import dresses from './pompom/dress-view.png';
+import account from './pompom/my-account.png';
+
+//pompom pictures
+import pomhome from "./pompom/pomhome.png";
+import pomdash from './pompom/pomdash.png';
+import profile from './pompom/profile.png';
+import upload from './pompom/upload.png';
+
+
 
 export default class Projects extends Component {
+  constructor() {
+    super();
+    this.state = {
+      toggle: false,
+      modalInfo: [[{pic: pomhome}, {pic: pomdash}, {pic: profile}, {pic: upload}],[{pic: home},{pic: homeMid},{pic: homeModal}, {pic: account}, {pic: dresses}, {pic: itemView}]],
+      modal: {}
+    };
+  }
+
+  toggler = id => this.setState({ modal: this.state.modalInfo[id], toggle: !this.state.toggle });
+
   render() {
+    console.log('modal', this.state.modal)
     return (
       <div className="projects-container">
         <h1 className="projects">projects</h1>
@@ -28,15 +57,19 @@ export default class Projects extends Component {
           </div>
           <Fade duration={1500}>
             <div className="computer">
-              <img src={pompom} alt="pompom" className="pompom-dash" />
+              <img src={pomdash} alt="pompom" className="pompom-dash" onClick={() => this.toggler(0)} />
             </div>
           </Fade>
         </div>
+        {/* {this.state.toggle && <Modal close={this.toggler} pix={[{ pic: home }, { pic: homeMid }, { pic: homeModal }, { pic: account }, { pic: dresses }, { pic: itemView }]} />} */}
+
         <div className="proj-two">
           <div className="computer">
-            <div className="boxy">
-              <img src={mucciHome} alt="project two home page" className="mucci-home" />
-            </div>
+            <Fade duration={1500}>
+              <div className="boxy" onClick={() => this.toggler(1)}>
+                <img src={mucciHome} alt="project two home page" className="mucci-home" />
+              </div>
+            </Fade>
           </div>
           <div className="text">
             <h1 className="proj-title">GUCCI CLONE</h1>
@@ -53,16 +86,24 @@ export default class Projects extends Component {
             </a>
           </div>
         </div>
+        {this.state.toggle && <Modal close={this.toggler} pix={ this.state.modal } />}
       </div>
     );
   }
 }
 class Modal extends Component {
   render() {
+    console.log(this.props.close);
     return (
       <div className="modal">
         <div className="modal-container">
-          <div className="modal-content">content....</div>
+          <div onClick={() => this.props.close()} className="x-out">
+            &times;
+          </div>
+          <div className="modal-content">
+            {/* <PicSlider pics={[{ pic: pompom }, { pic: mucciHome }]} /> */}
+            <PicSlider pics={this.props.pix} />
+          </div>
         </div>
       </div>
     );

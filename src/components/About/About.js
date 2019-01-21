@@ -20,14 +20,14 @@ export default class About extends Component {
           <div className="about-me">
             <div className="bio">
               <h1 className="about-title">about me</h1>
-              {/* <Fade left duration={2500}> */}
-              <p className="bio-text">
-                I'm a<span>&hearts;</span>
-              </p>
-              {/* </Fade>
-              <Fade top duration={2000}> */}
-              <img src={me} alt="madi walmsley" className="madi" />
-              {/* </Fade> */}
+              <Fade left duration={2500}>
+                <p className="bio-text">
+                  I'm a full stack web developer with a passion for design. <span>&hearts;</span>
+                </p>
+              </Fade>
+              <Fade bottom duration={2000}>
+                <img src={me} alt="madi walmsley" className="madi" />
+              </Fade>
             </div>
           </div>
         </div>

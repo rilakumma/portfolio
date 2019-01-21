@@ -15,14 +15,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="header-bar">
+        {/* <header className="header-bar">
           <ul className="header-ul">
             <li onClick={() => scrollToComponent(this.refs.home)}>Home</li>
             <li onClick={() => scrollToComponent(this.refs.about, { offset: 0, align: "top", duration: 1000 })}>About</li>
             <li onClick={() => scrollToComponent(this.refs.projects, { offset: 0, align: "top", duration: 1000 })}>Projects</li>
             <li onClick={() => scrollToComponent(this.refs.contact, { offset: 0, align: "top", duration: 1000 })}>Contact</li>
           </ul>
-        </header>
+        </header> */}
         <div className="side-links">
           <ul className="link-icons">
             <li>
@@ -41,11 +41,17 @@ class App extends Component {
               </a>
             </li>
           </ul>
+          <ul className="header-ul">
+            <li onClick={() => scrollToComponent(this.refs.home)}>Home</li>
+            <li onClick={() => scrollToComponent(this.refs.about, { offset: 0, align: "top", duration: 1000 })}>About</li>
+            <li onClick={() => scrollToComponent(this.refs.projects, { offset: 0, align: "top", duration: 1000 })}>Projects</li>
+            <li onClick={() => scrollToComponent(this.refs.contact, { offset: 0, align: "top", duration: 1000 })}>Contact</li>
+          </ul>
         </div>
 
         <Home ref="home" />
         <div className="scroll-down">
-          <Jump delay={2000}>
+          <Jump delay={5000}>
             <img
               src={down}
               alt="scroll down"
