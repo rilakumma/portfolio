@@ -10,7 +10,7 @@
   background: rgb(242, 219, 225);
 }
 .about-title {
-  font-size: 70px;
+  font-size: 60px;
   -webkit-text-stroke: 2px black;
   color: transparent;
 
@@ -25,16 +25,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 .bio-text {
-  width: 700px;
-
-  text-align: center;
+  width: 300px;
+  font-size: 18px;
   line-height: 28px;
 }
 .madi {
-  margin: 80px 0px;
+  margin: 80px 70px;
   width: 400px;
 }
 .skills {

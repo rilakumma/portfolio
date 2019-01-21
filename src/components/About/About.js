@@ -10,23 +10,27 @@ import node from "./../../nodejsblk.png";
 import postgr from "./../../darkpostgr.png";
 import reduxpng from "./../../drkredux.png";
 import sassy from "./../../blksass.png";
-import me from "./professional-madi.png";
+import me from "./profesh.png";
 
 export default class About extends Component {
   render() {
     return (
       <div className="about-container">
         <div className="about">
+          <h1 className="about-title">about me</h1>
           <div className="about-me">
             <div className="bio">
-              <h1 className="about-title">about me</h1>
-              <Fade left duration={2500}>
-                <p className="bio-text">
-                  I'm a full stack web developer with a passion for design. <span>&hearts;</span>
-                </p>
-              </Fade>
               <Fade bottom duration={2000}>
                 <img src={me} alt="madi walmsley" className="madi" />
+              </Fade>
+              <Fade right duration={2500}>
+                <p className="bio-text">
+                  I'm a full stack web developer with a passion for design. I have always loved learning new things and expressing my
+                  creativity. I enjoy keeping up with the latest technologies to grow my web development toolbox. I love a challenge and a
+                  chance to show off what I can do. I build web applications that provide an enjoyable user experience, while being clean
+                  and effient in the back-end.
+                  <div>&hearts;</div>
+                </p>
               </Fade>
             </div>
           </div>

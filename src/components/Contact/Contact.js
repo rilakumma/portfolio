@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./Contact.css";
+import "./Contact.scss";
 import email from "../../email.svg";
 import github from "../../github.svg";
 import linkedin from "../../linkedin.png";
@@ -32,17 +32,17 @@ export default class Contact extends Component {
         <h1 className="contact-title">Thank you!</h1>
 
         <div className="social-box">
-          <Fade delay={300}>
+          <Fade duration={3000}>
             <a href="https://www.linkedin.com/in/madison-walmsley/" target="_blank" rel="noopener noreferrer">
               <img src={linkedin} alt="in" className="socials" />
             </a>
           </Fade>
-          <Fade delay={400}>
+          <Fade duration={3000}>
             <a href="https://github.com/rilakumma" target="_blank" rel="noopener noreferrer">
               <img src={github} alt="gh" className="socials" />
             </a>
           </Fade>
-          <Fade delay={500}>
+          <Fade duration={3000}>
             <a href="mailto:walmsleymadi@gmail.com">
               <img src={email} alt="e" className="socials" />
             </a>

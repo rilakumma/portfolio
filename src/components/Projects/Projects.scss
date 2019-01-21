@@ -64,6 +64,9 @@
 .boxy {
   height: 340px;
   overflow: scroll;
+  &:hover {
+    cursor: pointer;
+  }
 }
 .mucci-home {
   width: 600px;
