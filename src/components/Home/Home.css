@@ -9,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* background: rgb(236, 236, 236); */
   /* background: rgb(238, 237, 237); */
 }
 .home-content {
@@ -16,6 +17,5 @@
 }
 .my-name {
   -webkit-text-stroke: 2px black;
-  /* color: transparent; */
-  color: white;
+  color: transparent;
 }

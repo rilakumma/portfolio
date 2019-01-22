@@ -32,21 +32,17 @@ export default class Contact extends Component {
         <h1 className="contact-title">Thank you!</h1>
 
         <div className="social-box">
-          <Fade duration={3000}>
-            <a href="https://www.linkedin.com/in/madison-walmsley/" target="_blank" rel="noopener noreferrer">
-              <img src={linkedin} alt="in" className="socials" />
-            </a>
-          </Fade>
-          <Fade duration={3000}>
-            <a href="https://github.com/rilakumma" target="_blank" rel="noopener noreferrer">
-              <img src={github} alt="gh" className="socials" />
-            </a>
-          </Fade>
-          <Fade duration={3000}>
-            <a href="mailto:walmsleymadi@gmail.com">
-              <img src={email} alt="e" className="socials" />
-            </a>
-          </Fade>
+          <a href="https://www.linkedin.com/in/madison-walmsley/" target="_blank" rel="noopener noreferrer">
+            <img src={linkedin} alt="in" className="socials" />
+          </a>
+
+          <a href="https://github.com/rilakumma" target="_blank" rel="noopener noreferrer">
+            <img src={github} alt="gh" className="socials" />
+          </a>
+
+          <a href="mailto:walmsleymadi@gmail.com">
+            <img src={email} alt="e" className="socials" />
+          </a>
         </div>
 
         <div className="form">
@@ -82,7 +78,6 @@ export default class Contact extends Component {
             <input type="submit" value="Send" className="submit" onClick={() => this.submitMessage()} />
           </form>
         </div>
-        {/* </div> */}
       </div>
     );
   }

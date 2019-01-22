@@ -13,15 +13,14 @@
 .projects {
   @include emptyText;
   margin-top: 60px;
-  align-self: flex-start;
-  margin-left: 200px;
 }
 .text {
   width: 350px;
   margin: 50px;
   font-size: 14px;
   line-height: 20px;
-  color: rgb(63, 64, 65);
+  // color: rgb(63, 64, 65);
+  color: black;
 }
 .proj-title {
   font-size: 25px;
@@ -63,13 +62,16 @@
 }
 .boxy {
   height: 340px;
-  overflow: scroll;
+
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
+
   &:hover {
     cursor: pointer;
   }
 }
+
 .mucci-home {
-  width: 600px;
+  width: 680px;
   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.5);
 }
 .live-btn {

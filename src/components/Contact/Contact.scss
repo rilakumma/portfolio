@@ -5,7 +5,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-
+  // background: rgb(236, 236, 236);
   /* background: #f3f6f6; */
 }
 a {
@@ -38,7 +38,7 @@ a {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  border: 1px grey solid;
+  border: 1px black solid;
 }
 .contact-title {
   margin-top: 75px;
@@ -63,7 +63,7 @@ a {
 .input-line {
   width: 90%;
   border: none;
-  border-bottom: 1px grey solid;
+  border-bottom: 1px black solid;
   background: none;
   line-height: 25px;
   font-size: 20px;

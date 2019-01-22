@@ -6,15 +6,16 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 890px;
+  height: 750px;
   background: rgb(242, 219, 225);
 }
 .about-title {
-  font-size: 60px;
+  font-size: 50px;
   -webkit-text-stroke: 2px black;
   color: transparent;
 
   margin: 50px 0px;
+  margin-top: 80px;
 }
 /* .about-me {
   padding: 0px 75px;
@@ -28,12 +29,13 @@
   /* flex-direction: column; */
 }
 .bio-text {
-  width: 300px;
+  width: 350px;
   font-size: 18px;
   line-height: 28px;
 }
 .madi {
-  margin: 80px 70px;
+  margin: 30px 70px;
+  margin-bottom: 100px;
   width: 400px;
 }
 .skills {
@@ -50,6 +52,9 @@
   margin-left: 300px;
   position: relative;
   top: -60px;
+  -webkit-text-stroke: 2px black;
+  color: transparent;
+  font-size: 50px;
 }
 .skills-box {
   width: 80%;

@@ -25,10 +25,10 @@ export default class About extends Component {
               </Fade>
               <Fade right duration={2500}>
                 <p className="bio-text">
-                  I'm a full stack web developer with a passion for design. I have always loved learning new things and expressing my
-                  creativity. I enjoy keeping up with the latest technologies to grow my web development toolbox. I love a challenge and a
-                  chance to show off what I can do. I build web applications that provide an enjoyable user experience, while being clean
-                  and effient in the back-end.
+                  I'm a full stack web developer with a passion for design. I love learning new things and keeping up with the latest
+                  technologies to grow my toolbox. I'm experienced working with a team using excellent project management skills, but I also
+                  do well working on projects on my own. I build web applications that provide an enjoyable user experience, while being
+                  clean and efficient behind the scenes.
                   <div>&hearts;</div>
                 </p>
               </Fade>

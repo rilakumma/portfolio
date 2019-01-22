@@ -13,6 +13,7 @@ import Jump from "react-reveal/Jump";
 
 class App extends Component {
   render() {
+    console.log(process.env.PUBLIC_URL);
     return (
       <div className="App">
         {/* <header className="header-bar">
@@ -68,6 +69,7 @@ class App extends Component {
         <About ref="about" />
         <Projects ref="projects" />
         <Contact ref="contact" />
+        <footer>Made with &hearts; by Madi Walmsley 2019</footer>
       </div>
     );
   }

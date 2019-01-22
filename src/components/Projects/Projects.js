@@ -3,30 +3,30 @@ import "./Projects.scss";
 import Fade from "react-reveal/Fade";
 import PicSlider from "./Slider";
 
-
 // mucci pictures
 import mucciHome from "./pompom/mucci-home.png";
-import home from './pompom/homepage.png';
-import homeModal from './pompom/home-modal.png';
-import itemView from './pompom/item-view.png';
-import homeMid from './pompom/home-mid.png';
-import dresses from './pompom/dress-view.png';
-import account from './pompom/my-account.png';
+import home from "./pompom/homepage.png";
+import homeModal from "./pompom/home-modal.png";
+import itemView from "./pompom/item-view.png";
+import homeMid from "./pompom/home-mid.png";
+import dresses from "./pompom/dress-view.png";
+import account from "./pompom/my-account.png";
 
 //pompom pictures
 import pomhome from "./pompom/pomhome.png";
-import pomdash from './pompom/pomdash.png';
-import profile from './pompom/profile.png';
-import upload from './pompom/upload.png';
-
-
+import pomdash from "./pompom/pomdash.png";
+import profile from "./pompom/profile.png";
+import upload from "./pompom/upload.png";
 
 export default class Projects extends Component {
   constructor() {
     super();
     this.state = {
       toggle: false,
-      modalInfo: [[{pic: pomhome}, {pic: pomdash}, {pic: profile}, {pic: upload}],[{pic: home},{pic: homeMid},{pic: homeModal}, {pic: account}, {pic: dresses}, {pic: itemView}]],
+      modalInfo: [
+        [{ pic: pomhome }, { pic: pomdash }, { pic: profile }, { pic: upload }],
+        [{ pic: home }, { pic: homeMid }, { pic: homeModal }, { pic: account }, { pic: dresses }, { pic: itemView }]
+      ],
       modal: {}
     };
   }
@@ -34,7 +34,7 @@ export default class Projects extends Component {
   toggler = id => this.setState({ modal: this.state.modalInfo[id], toggle: !this.state.toggle });
 
   render() {
-    console.log('modal', this.state.modal)
+    console.log("modal", this.state.modal);
     return (
       <div className="projects-container">
         <h1 className="projects">projects</h1>
@@ -67,7 +67,7 @@ export default class Projects extends Component {
           <div className="computer">
             <Fade duration={1500}>
               <div className="boxy" onClick={() => this.toggler(1)}>
-                <img src={mucciHome} alt="project two home page" className="mucci-home" />
+                <img src={home} alt="project two home page" className="mucci-home" />
               </div>
             </Fade>
           </div>
@@ -85,8 +85,8 @@ export default class Projects extends Component {
               <button className="live-btn">LIVE SITE</button>
             </a>
           </div>
+          {this.state.toggle && <Modal close={this.toggler} pix={this.state.modal} />}
         </div>
-        {this.state.toggle && <Modal close={this.toggler} pix={ this.state.modal } />}
       </div>
     );
   }

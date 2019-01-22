@@ -12,3 +12,10 @@ app.post("/api/message", controller.emailMessage);
 app.listen(4000, () => {
   console.log("Server is listening on port 4000 💫 💫 💫 💫");
 });
+
+app.use(express.static(`${__dirname}/../build`));
+
+const path = require("path");
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../build/index.html"));
+});
