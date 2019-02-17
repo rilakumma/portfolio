@@ -38,6 +38,9 @@
   li {
     font-size: 15px;
     margin: 15px 0px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -70,4 +73,13 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 14px;
+}
+
+@media screen and (max-width: 400px) {
+  .header-ul {
+    display: none;
+  }
+  .side-links {
+    display: none;
+  }
 }

@@ -94,4 +94,13 @@ a {
   font-size: 24px;
   box-shadow: 1px 1px grey;
   outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact {
+    width: 100vw;
+  }
 }

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.scss";
+import ReactGA from "react-ga";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
@@ -11,9 +12,15 @@ import linkedin from "./linkedin.png";
 import down from "./DownArrow.png";
 import Jump from "react-reveal/Jump";
 
+function initializeReactGA() {
+  ReactGA.initialize("UA-132966101-1");
+  ReactGA.pageview("/");
+}
 class App extends Component {
+  componentDidMount() {
+    initializeReactGA();
+  }
   render() {
-    console.log(process.env.PUBLIC_URL);
     return (
       <div className="App">
         {/* <header className="header-bar">
