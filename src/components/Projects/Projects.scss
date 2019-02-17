@@ -91,16 +91,22 @@
   @include fade-in(0.3s);
 }
 .modal-content {
-  height: 500px;
-  width: 800px;
+  height: 75vh;
+  width: 75vw;
   z-index: 5;
 }
 .x-out {
   height: 40px;
   position: relative;
-  left: 810px;
+  // left: 810px;
+  left: 100%;
   font-size: 40px;
   &:hover {
     cursor: pointer;
   }
+}
+
+.slider-img {
+  height: 100%;
+  width: 100%;
 }

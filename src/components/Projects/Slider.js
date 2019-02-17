@@ -30,7 +30,7 @@ export default class PicSlider extends Component {
       <div className="slider">
         <Slider {...settings}>
           {this.props.pics.map(pic => {
-            return <img src={pic.pic} alt="testing" height={400} />;
+            return <img src={pic.pic} alt="testing" className="slider-img" />;
           })}
         </Slider>
       </div>
